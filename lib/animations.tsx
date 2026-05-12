@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, type HTMLMotionProps } from "framer-motion";
 import { useRef } from "react";
 
 export const fadeInUp = {
@@ -9,10 +9,14 @@ export const fadeInUp = {
   transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
 };
 
-export const hoverScale = {
+export const hoverScale: HTMLMotionProps<"div"> = {
   whileHover: { scale: 1.05 },
   whileTap: { scale: 0.95 },
-  transition: { type: "spring" as const, stiffness: 400, damping: 25 }
+  transition: {
+    type: "spring",
+    stiffness: 400,
+    damping: 25,
+  },
 };
 
 export const slideReveal = {
