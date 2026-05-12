@@ -1,65 +1,154 @@
-import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import Footer from "@/components/Footer";
+import Link from "next/link";
+import { ShieldCheck, TrendingUp, Award, ChevronRight } from "lucide-react";
+import { Reveal } from "@/lib/animations";
+import { ClientLogo } from "@/components/ClientLogo";
+
+// 17 Clients for the marquee
+const clients = [
+  { name: "ALLIED PLASTICS", logo: "/images/clients/Allied-plastics.jpg" },
+  { name: "APEX TECHNO POLYMERS", logo: "/images/clients/apex logo.png" },
+  { name: "ARCHEM", logo: "/images/clients/archem logo.webp" },
+  { name: "BLOWPACK", logo: "/images/clients/blowpack logo.png" },
+  { name: "Ceyenar Chemicals", logo: "/images/clients/ceyenar_logo.png" },
+  { name: "DSM AGENCIES", logo: "/images/clients/dsmlogo.jpg" },
+  { name: "GLOBUS RUBCHEM", logo: "/images/clients/Globus logo.jpg" },
+  { name: "HMEL", logo: "/images/clients/HMEL logo.png" },
+  { name: "ITC LIMITED", logo: "/images/clients/itc-limited-logo-png-transparent.png" },
+  { name: "RAVAGO INDIA", logo: "/images/clients/ravago_india_logo.jpg" },
+  { name: "RELIANCE POLYMER", logo: "/images/clients/reliance polymer logo.png" },
+  { name: "ROCA BATHROOMS", logo: "/images/clients/Roca-Large-Square logo.webp" },
+  { name: "STAR PVC", logo: "/images/clients/Star_Logo-01-scaled.jpg" },
+  { name: "TEGRAL INDIA", logo: "/images/clients/tegral_india_pvt_ltd_logo.jpg" },
+  { name: "UPHEALTHY MEDICAL DEVICES", logo: "/images/clients/Uphealthy logo.png" },
+  { name: "ZIRA LIFESTYLES", logo: "/images/clients/zira-logo.webp" },
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="min-h-screen bg-white selection:bg-blue-600 selection:text-white overflow-x-hidden">
+      <Navbar />
+      <Hero />
+
+      {/* Luxury Client Marquee with Logos */}
+      <section className="bg-white py-16 md:py-24 overflow-hidden border-b border-slate-50">
+        <div className="container mx-auto px-6 mb-12">
+          <Reveal>
+            <div className="flex items-center gap-4">
+              <div className="h-px flex-1 bg-slate-200" />
+              <p className="text-center text-[10px] md:text-xs font-black uppercase tracking-[0.5em] text-slate-500">
+                Institutional Partners
+              </p>
+              <div className="h-px flex-1 bg-slate-200" />
+            </div>
+          </Reveal>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        
+        <div className="relative flex whitespace-nowrap overflow-hidden">
+          <div className="flex animate-marquee gap-8 md:gap-16 items-center">
+            {[...clients, ...clients].map((client, i) => (
+              <ClientLogo key={i} name={client.name} src={client.logo} />
+            ))}
+          </div>
         </div>
-      </main>
+      </section>
+
+      <Services />
+
+      {/* Experience / Value Prop - Premium Contrast */}
+      <section className="py-20 md:py-32 bg-white overflow-hidden">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col items-center gap-12 md:gap-20 lg:flex-row">
+            <div className="w-full lg:w-1/2">
+               <Reveal>
+                 <div className="inline-flex items-center gap-2 text-blue-600 font-black uppercase tracking-[0.3em] text-[10px] md:text-xs mb-6">
+                    <div className="h-2.5 w-2.5 rounded-full bg-blue-600" />
+                    Engineering Excellence
+                 </div>
+                 <h2 className="mb-8 text-4xl md:text-7xl font-black text-slate-900 tracking-tighter leading-[0.95]">
+                   The Standard <br className="hidden md:block" />
+                   of Industrial <br className="hidden md:block" />
+                   <span className="text-blue-600 underline decoration-blue-100 underline-offset-8">Integrity.</span>
+                 </h2>
+                 <p className="mb-12 text-lg md:text-xl font-medium text-slate-700 leading-relaxed max-w-xl">
+                   For two decades, VKLS has managed the critical supply chains of Fortune 500 giants with surgical precision and zero compromise.
+                 </p>
+               </Reveal>
+               
+               <div className="grid gap-8 md:gap-10">
+                  {[
+                    { icon: <ShieldCheck className="text-blue-600" />, title: "Hazardous Materials", desc: "India's highest safety rating for chemical handling." },
+                    { icon: <TrendingUp className="text-blue-600" />, title: "Smart Operations", desc: "AI-driven inventory forecasting and real-time transit." },
+                    { icon: <Award className="text-blue-600" />, title: "Tier-1 Compliance", desc: "Exceeding ISO & OHSAS global industrial standards." }
+                  ].map((item, i) => (
+                    <Reveal key={i} delay={i * 0.1}>
+                      <div className="flex gap-6 group">
+                         <div className="flex h-14 w-14 md:h-16 md:w-16 shrink-0 items-center justify-center rounded-2xl bg-slate-50 border border-slate-200 transition-all duration-500 group-hover:bg-blue-600 group-hover:text-white group-hover:shadow-2xl group-hover:shadow-blue-200">
+                            {item.icon}
+                         </div>
+                         <div className="flex flex-col justify-center">
+                            <h4 className="text-lg md:text-xl font-black text-slate-900 mb-1">{item.title}</h4>
+                            <p className="text-slate-600 font-medium">{item.desc}</p>
+                         </div>
+                      </div>
+                    </Reveal>
+                  ))}
+               </div>
+            </div>
+            
+            <div className="w-full lg:w-1/2">
+               <Reveal delay={0.3}>
+                 <div className="relative aspect-[4/5] rounded-[3rem] md:rounded-[4.5rem] bg-slate-100 overflow-hidden shadow-2xl group">
+                    <img 
+                      src="/images/engineering-excellence.jpg" 
+                      alt="Engineering Excellence" 
+                      className="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110" 
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent z-10" />
+                    <div className="absolute bottom-8 left-8 right-8 md:bottom-12 md:left-12 md:right-12 z-20">
+                       <div className="dark-glass rounded-2xl md:rounded-3xl p-6 md:p-10 shadow-2xl">
+                          <div className="text-4xl md:text-6xl font-black text-blue-500 mb-2">3L+</div>
+                          <p className="text-white font-bold uppercase tracking-[0.2em] text-[10px] md:text-xs opacity-90">Sq Ft of High-Security Industrial Hub</p>
+                       </div>
+                    </div>
+                 </div>
+               </Reveal>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Luxury CTA - High Contrast */}
+      <section className="pb-20 md:pb-32 px-6">
+        <div className="container mx-auto">
+          <Reveal>
+            <div className="relative rounded-[2.5rem] md:rounded-[4.5rem] bg-slate-900 p-10 md:p-24 text-center overflow-hidden shadow-2xl shadow-blue-900/20">
+               <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_top_right,#2563eb15,transparent)]" />
+               <div className="relative z-10">
+                 <h2 className="mb-6 text-3xl md:text-7xl text-white tracking-tighter leading-tight font-black">
+                   Ready to Command <br className="hidden md:block" />
+                   Your Supply Chain?
+                 </h2>
+                 <p className="mx-auto mb-10 md:mb-12 max-w-2xl text-lg md:text-2xl font-medium text-slate-400">
+                   Join the elite circle of industry leaders who trust VKLS for their most critical logistics missions.
+                 </p>
+                 <Link 
+                  href="/contact"
+                  className="inline-flex items-center gap-3 rounded-full bg-blue-600 px-8 py-4 md:px-12 md:py-6 text-lg md:text-xl font-black text-white transition-all hover:bg-white hover:text-blue-600 active:scale-95 shadow-2xl shadow-blue-500/30"
+                 >
+                   Request Executive Audit
+                   <ChevronRight size={24} />
+                 </Link>
+               </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <Footer />
     </div>
   );
 }
