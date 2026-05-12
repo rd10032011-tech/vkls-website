@@ -99,7 +99,7 @@ export default function ContactPage() {
                    <div className="space-y-12">
                       {[
                         { icon: <MapPin size={28} />, label: "Strategic Headquarters", value: "F3, Shree Diya Residency, Bhuvaneshwari nagar, 2nd street, Puzhal, Chennai-600066" },
-                        { icon: <Phone size={28} />, label: "Direct Line", value: "+91 44 2345 6789" },
+                        { icon: <Phone size={28} />, label: "Direct Line", value: "+91 90033 20526" },
                         { icon: <Mail size={28} />, label: "Strategic Inquiries", value: "mani@vkls.in" }
                       ].map((item, i) => (
                         <Reveal key={i} delay={i * 0.1}>
@@ -121,7 +121,7 @@ export default function ContactPage() {
                   <div className="rounded-[3rem] bg-slate-950 p-12 text-white shadow-2xl relative overflow-hidden">
                      <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_bottom_left,#2563eb20,transparent)]" />
                      <div className="relative z-10">
-                       <h3 className="mb-8 text-2xl font-black tracking-tight">Enterprise Support</h3>
+                       <h3 className="mb-8 text-2xl font-black tracking-tight text-white">Enterprise Support</h3>
                        <div className="space-y-6 font-bold text-slate-400">
                           <div className="flex items-center justify-between">
                              <span>Operational Hours</span>
