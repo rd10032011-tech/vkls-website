@@ -47,6 +47,7 @@ export default function Footer() {
               {[
                 { name: "About VKLS", href: "/about" },
                 { name: "Our Services", href: "/services" },
+                { name: "Our Presence", href: "/presence" },
                 { name: "Founders", href: "/founders" },
                 { name: "Contact", href: "/contact" },
               ].map((link) => (
