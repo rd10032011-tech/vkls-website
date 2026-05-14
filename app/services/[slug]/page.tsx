@@ -22,7 +22,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         <section className="bg-slate-50 py-24">
           <div className="container mx-auto px-6">
             <Link 
-              href="/#services" 
+              href="/services" 
               className="mb-8 inline-flex items-center gap-2 font-bold text-slate-500 hover:text-blue-600 transition-colors"
             >
               <ArrowLeft size={20} />

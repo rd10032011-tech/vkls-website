@@ -60,7 +60,7 @@ export default function LogisticsAIHub() {
             </div>
 
             {/* Chat Area */}
-            <div className="h-80 overflow-y-auto p-6 space-y-4 bg-slate-50" onClick={() => setIsOpen(false)}>
+            <div className="h-80 overflow-y-auto p-6 space-y-4 bg-slate-50">
               {messages.map((m, i) => (
                 <div key={i} className={`p-4 rounded-2xl text-sm ${m.role === 'user' ? 'bg-blue-600 text-white ml-auto max-w-[80%]' : 'bg-white border border-slate-100 text-slate-700 mr-auto max-w-[80%]'}`}>
                   <ReactMarkdown components={{

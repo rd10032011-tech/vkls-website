@@ -52,10 +52,10 @@ export const metadata: Metadata = {
     siteName: "VKLS Logistics",
     images: [
       {
-        url: "/og-image.jpg", // User: provide a high-res facility image (1200x630)
+        url: "/logo.webp",
         width: 1200,
         height: 630,
-        alt: "VKLS Industrial Facility",
+        alt: "VKLS Logistics Solutions",
       },
     ],
     locale: "en_IN",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "VKLS | India's Leading Industrial Logistics Partner",
     description: "20+ years of excellence in petrochemical logistics and hazardous warehousing.",
-    images: ["/og-image.jpg"],
+    images: ["/logo.webp"],
   },
   robots: {
     index: true,
@@ -92,7 +92,7 @@ export default function RootLayout({
     "@type": "LogisticsCompany",
     "name": "VKLS Logistics",
     "url": "https://vkls.in",
-    "logo": "https://vkls.in/logo.png",
+    "logo": "https://vkls.in/logo.webp",
     "description": "Leading petrochemical logistics and warehousing partner in South India.",
     "address": {
       "@type": "PostalAddress",

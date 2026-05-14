@@ -100,7 +100,7 @@ export default function AboutPage() {
                    <div className="aspect-[4/3] rounded-[3.5rem] bg-white p-4 shadow-2xl shadow-blue-100 ring-1 ring-slate-100 group">
                       <div className="h-full w-full rounded-[2.5rem] bg-slate-100 overflow-hidden relative">
                          <img 
-                            src="/images/team-mastery.jpg" 
+                            src="/images/team-mastery.webp" 
                             alt="VK LOGISTICS SOLUTIONS Team Excellence" 
                             className="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110" 
                          />

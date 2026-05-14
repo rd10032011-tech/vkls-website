@@ -14,7 +14,7 @@ export const services = [
       "Temperature and humidity control zones",
       "State-of-the-art fire suppression systems"
     ],
-    image: "/images/services/warehousing-storage.jpg"
+    image: "/images/services/warehousing-storage.webp"
   },
   {
     slug: "order-fulfillment",
@@ -29,7 +29,7 @@ export const services = [
       "Kitting and value-added assembly",
       "Full ERP system integration"
     ],
-    image: "/images/services/order-fulfillment.jpg"
+    image: "/images/services/order-fulfillment.webp"
   },
   {
     slug: "transportation",
@@ -44,7 +44,7 @@ export const services = [
       "Dynamic route optimization",
       "Periodic safety and compliance audits"
     ],
-    image: "/images/services/transportation.jpg"
+    image: "/images/services/transportation.webp"
   },
   {
     slug: "inventory-management",
@@ -59,7 +59,7 @@ export const services = [
       "Cycle counting & audit support",
       "API-first integration for seamless tracking"
     ],
-    image: "/images/services/inventory-management.jpg"
+    image: "/images/services/inventory-management.webp"
   },
   {
     slug: "reverse-logistics",
@@ -89,6 +89,6 @@ export const services = [
       "End-to-end multimodal project cargo",
       "Upcoming regulatory trade facilitation"
     ],
-    image: "/images/services/freight-forwarding.jpg"
+    image: "/images/services/freight-forwarding.webp"
   }
 ];

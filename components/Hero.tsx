@@ -83,7 +83,7 @@ export default function Hero() {
                 }}
               >
                 <Link
-                  href="/quote"
+                  href="/contact"
                   className="flex items-center justify-center gap-3 rounded-full border-2 border-slate-200 bg-white/50 backdrop-blur-md px-10 py-5 text-xl font-black text-slate-900 transition-all hover:bg-white hover:border-blue-600"
                 >
                   Request Audit

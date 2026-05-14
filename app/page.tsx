@@ -9,21 +9,21 @@ import { ClientLogo } from "@/components/ClientLogo";
 
 // 17 Clients for the marquee
 const clients = [
-  { name: "ALLIED PLASTICS", logo: "/images/clients/Allied-plastics.jpg" },
-  { name: "APEX TECHNO POLYMERS", logo: "/images/clients/apex logo.png" },
+  { name: "ALLIED PLASTICS", logo: "/images/clients/Allied-plastics.webp" },
+  { name: "APEX TECHNO POLYMERS", logo: "/images/clients/apex logo.webp" },
   { name: "ARCHEM", logo: "/images/clients/archem logo.webp" },
-  { name: "BLOWPACK", logo: "/images/clients/blowpack logo.png" },
-  { name: "Ceyenar Chemicals", logo: "/images/clients/ceyenar_logo.png" },
-  { name: "DSM AGENCIES", logo: "/images/clients/dsmlogo.jpg" },
-  { name: "GLOBUS RUBCHEM", logo: "/images/clients/Globus logo.jpg" },
-  { name: "HMEL", logo: "/images/clients/HMEL logo.png" },
-  { name: "ITC LIMITED", logo: "/images/clients/itc-limited-logo-png-transparent.png" },
-  { name: "RAVAGO INDIA", logo: "/images/clients/ravago_india_logo.jpg" },
-  { name: "RELIANCE POLYMER", logo: "/images/clients/reliance polymer logo.png" },
+  { name: "BLOWPACK", logo: "/images/clients/blowpack logo.webp" },
+  { name: "Ceyenar Chemicals", logo: "/images/clients/ceyenar_logo.webp" },
+  { name: "DSM AGENCIES", logo: "/images/clients/dsmlogo.webp" },
+  { name: "GLOBUS RUBCHEM", logo: "/images/clients/Globus logo.webp" },
+  { name: "HMEL", logo: "/images/clients/HMEL logo.webp" },
+  { name: "ITC LIMITED", logo: "/images/clients/itc-limited-logo-png-transparent.webp" },
+  { name: "RAVAGO INDIA", logo: "/images/clients/ravago_india_logo.webp" },
+  { name: "RELIANCE POLYMER", logo: "/images/clients/reliance polymer logo.webp" },
   { name: "ROCA BATHROOMS", logo: "/images/clients/Roca-Large-Square logo.webp" },
-  { name: "STAR PVC", logo: "/images/clients/Star_Logo-01-scaled.jpg" },
-  { name: "TEGRAL INDIA", logo: "/images/clients/tegral_india_pvt_ltd_logo.jpg" },
-  { name: "UPHEALTHY MEDICAL DEVICES", logo: "/images/clients/Uphealthy logo.png" },
+  { name: "STAR PVC", logo: "/images/clients/Star_Logo-01-scaled.webp" },
+  { name: "TEGRAL INDIA", logo: "/images/clients/tegral_india_pvt_ltd_logo.webp" },
+  { name: "UPHEALTHY MEDICAL DEVICES", logo: "/images/clients/Uphealthy logo.webp" },
   { name: "ZIRA LIFESTYLES", logo: "/images/clients/zira-logo.webp" },
 ];
 
@@ -103,7 +103,7 @@ export default function Home() {
                <Reveal delay={0.3}>
                  <div className="relative aspect-[4/5] rounded-[3rem] md:rounded-[4.5rem] bg-slate-100 overflow-hidden shadow-2xl group">
                     <img 
-                      src="/images/engineering-excellence.jpg" 
+                      src="/images/engineering-excellence.webp" 
                       alt="Engineering Excellence" 
                       className="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110" 
                     />

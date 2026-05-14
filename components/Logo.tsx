@@ -8,7 +8,7 @@ export default function Logo() {
     <Link href="/" className="flex items-center gap-4 group">
       <div className="relative h-20 w-20 transition-transform duration-500 group-hover:scale-105">
         <Image 
-          src="/logo.png" 
+          src="/logo.webp" 
           alt="VKLS Logo" 
           fill
           sizes="(max-width: 80px) 100vw, 80px"

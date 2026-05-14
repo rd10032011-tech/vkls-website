@@ -10,7 +10,7 @@ const founders = [
     name: "V KUMARAVEL",
     role: "Co-Founder & CEO",
     bio: "V Kumaravel is a dynamic force in transport operations, industrial logistics, and supply chain execution. With deep expertise in petrochemical logistics and warehousing, he drives precision and performance across South India. He brings sharp insight into movement planning, customer expectations, and operational excellence. His strength lies in seamlessly integrating transport, warehousing, and business growth. Known for his execution-driven mindset, he delivers practical and high-impact logistics solutions. He has a proven ability to identify opportunities and build strong, lasting client partnerships. With keen market awareness, he ensures adaptability, reliability, and consistent performance. His focus on efficiency and scalability fuels sustainable expansion. Under his leadership, VKLS continues to rise as a powerful and trusted name in industrial logistics.",
-    image: "/images/founders/founder_kumaravel.jpg", 
+    image: "/images/founders/founder_kumaravel.webp", 
     linkedin: "#",
     email: "kumaravel@vkls.in"
   },
@@ -18,7 +18,7 @@ const founders = [
     name: "R MANIKANDAN",
     role: "Co-Founder & COO",
     bio: "R Manikandan is a seasoned leader with over 25+ years of experience across logistics, finance, administration, and operations. An MBA graduate, he brings a powerful blend of strategic insight and operational discipline. He is known for driving financial clarity, structured systems, and organizational excellence. His expertise in finance and administrative control ensures precision, accountability, and efficiency at every level. From cost optimization to execution oversight, he strengthens the company’s operational backbone. His leadership fosters stability, process clarity, and consistent performance. With deep knowledge of financial systems, warehousing, and supply chain management, he plays a critical role in building a resilient and future-ready organization. Under his guidance, VKLS continues to stand strong with efficiency, stability, and sustainable growth.",
-    image: "/images/founders/founder_manikandan (1).jpg",
+    image: "/images/founders/founder_manikandan (1).webp",
     linkedin: "#",
     email: "mani@vkls.in"
   }
