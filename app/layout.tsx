@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     default: "VK LOGISTICS SOLUTIONS | Expert Logistics for Petrochemicals, Polymers, Tyres & Home Appliances",
     template: "%s | VK LOGISTICS SOLUTIONS"
   },
-  description: "VK LOGISTICS SOLUTIONS (VKLS) is India's premier industrial logistics expert. We specialize in end-to-end supply chain management for Petrochemicals, Polymers, Tyres, and Home Appliances. 20+ years of high-security, hazardous-material certified operations across India and global trade lanes.",
+  description: "VK Logistics Solutions (VKLS) is India's premier industrial logistics powerhouse. We deliver unmatched safety, precision, and scalability for petrochemicals, hazardous materials, and enterprise supply chains. Experience the gold standard of operational integrity.",
   keywords: [
     "VK LOGISTICS SOLUTIONS",
     "VKLS",

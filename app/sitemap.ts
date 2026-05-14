@@ -11,7 +11,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/services',
     '/presence',
     '/contact',
-    '/quote',
   ];
 
   return routes.map((route) => ({
